@@ -1,6 +1,6 @@
 package java03;
 
-public class main {
+public class cloneDemo {
     public static void main(String[] args) throws CloneNotSupportedException {
         Guys guys=new Guys("nguy");
         Bro bro=new Bro("nbro",guys);
