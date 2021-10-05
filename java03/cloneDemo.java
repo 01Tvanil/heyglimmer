@@ -7,9 +7,11 @@ public class cloneDemo {
         Java java=new Java("njava",bro);
         Glimmer glimmer1=new Glimmer("nglimmer",guys,bro,java);
         Glimmer glimmerClone=(Glimmer) glimmer1.clone();
+        //改前测试
         System.out.println(glimmer1.getJava().getBro().getGuy().getName());
         System.out.println(glimmerClone.getJava().getBro().getGuy().getName());
         glimmerClone.getJava().getBro().getGuy().setName("guyClone");
+        //改后测试
         System.out.println(glimmer1.getJava().getBro().getGuy().getName());
         System.out.println(glimmerClone.getJava().getBro().getGuy().getName());
     }
